@@ -1,0 +1,227 @@
+body{
+     font-family: 'Adamina', serif;
+	 color: #a6a6a6;
+	 margin : 0;
+	 padding: 0;
+	 background: #f2f2f2;
+}
+a img {
+     border: 0;
+	 }
+	 
+#mainbox{
+	width: 1260px;
+	margin: auto;
+	position: relative;
+}
+header {
+	background: url(design/box-tail.gif) left top repeat;
+	height: 69px;
+	position: relative;
+}
+
+#top-menu a {
+    display: block;
+	float: left;
+	color: #b7b7b7;
+	font-size: 18px;
+	text-decoration: none;
+	background: url(design/nav-divider.png) right top no-repeat;
+	padding-right: 35px;
+	margin-left: 15px;
+	height: 25px;
+	
+}
+#top-menu  {
+    position: absolute;
+	top: 20px;
+	left: 40px;
+}
+#top-menu #last {
+background: none;
+}
+
+#soc-icons a {
+     display: block;
+	 float: left;
+	 margin-right: 5px;
+	 width: 32px;
+	 height: 32px;
+	 opacity: 0.6;
+}
+#twitter {
+     background: url(design/twitter.png) left top no-repeat;
+	}
+#facebook {
+     background: url(design/facebook.png) left top no-repeat;
+	 	}
+#google{
+     background: url(design/google.png) left top no-repeat;
+	}
+#rss {
+     background: url(design/rss.png) left top no-repeat;
+	}
+#soc-icons a:hover{
+		opacity: 1;
+}
+#soc-icons {
+		position: absolute;
+		top: 20px;
+		right: 40px;
+}
+#wrapperr {
+   padding: 40px;
+  }
+/* форма поиска, стилизуем элемент форм */
+#search {
+    width: 369px;
+	height: 37px;
+	background: #ffffff;
+	float:right; /* выравниванием по правому краю */
+	margin-top: 30px;
+	box-shadow: 4px 4px 4px rgda(122,122,122,0.1);
+	border: 1px solid rgb(224,224,224);
+}
+#search input[type=text]{
+    width: 330px;
+	height: 35px;
+	border: 0;
+}
+/* стилизуем кнопку поиска */
+#search input[type=submit]{
+	display:block;
+	float: right;
+	background: url(design/btn-search.png) left top no-repeat;
+	width: 22px;
+	height: 18px;
+	border: 0;
+	margin-right: 10px;
+	margin-top: 10px;
+	cursor: pointer;
+}
+
+#banner {
+    margin-top: 30px;
+	height: 510px;
+	overflow: hidden;
+	box-shadow: 0px 0px 5px 4px rgba(122,122,122,0.1);
+	}
+
+#bright {
+    background: #ffffff;
+	height:430px;	
+	width: 300px; 
+	/* ширина с учетом того, что ширина блока #banner равна внутренней ширине контента блока #wrapper, ширина которого равна (1260-40*2)=1180px/
+	для данного блока остается ширина: 1180-800 (ширина слайдера) = 380 px;
+	и так как у нас стоят внутр.отступы эл-та равные 40 - то размеры эл-та будут ув-ны на 80px, соотв. его ширина  д.б. 380-80px; */
+    float: left; /* прижимаем его справа к блоку #slider */
+    padding: 40px;
+	overflow: hidden; /* контент не будет выходить за границы данного эл-та с размерами 800x510 */
+	}
+#bright h2 {
+	color: #3c3c3c;
+	font-size: 28px;
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
+	border-bottom: 1px solid #cacaca;
+	padding-bottom: 25px;
+}
+#bright img {
+	border-radius: 55px;
+	float: left;
+	margin-right: 20px;
+}
+#bright div {
+	clear: both;
+	border-bottom: 1px solid #e7e7e7;
+	padding-bottom: 30px;
+	padding-top: 30px;
+}
+#bright div h3 {
+    font-weight: normal;
+	font-size: 18px;
+	color: #333333;
+	padding: 0;
+	margin: 0;
+	padding-top: 8px;
+}
+#bright div p {
+	color: #444444;
+	padding: 0;
+	margin: 0;
+	font-size: 14px;
+	padding-bottom: 12px;
+}
+#bright div a {
+	color: #888888;
+	text-decoration: none;
+	font-size: 15px;
+}
+#view-all {
+    display: block;
+	color: white;
+	border-radius: 5px;
+	background: url(design/btn-tail.gif)left top repeat;
+	height: 42px;
+	width: 80px;
+	text-decoration: none;
+	margin-top: 20px;
+	margin-left: 10px;
+	text-align: center;
+	line-height:42px;
+}
+/*Контейнер для блоков анонсов статей */
+#works-box {
+	margin-top: 40px;
+	height: 179px; /* высота обязательна для того чтобы след. за данным блоком не наезжали на него */
+}
+/* стили блока анонсов статей */
+#works-box div {
+    background: #ffffff;
+	width: 380px;
+	float: left; /* чтобы блоки шли друг за другом */
+	margin-right: 20px;
+	box-shadow: 0px 0px 5px 4px rgba(122,122,122,0.1);
+}
+#works-box #work-last {
+	margin-right:0;     	/* убираем внешний отступ справа для последнего блока, чтоб он помест.в линию с остальными */
+}
+#works-box div img {
+	float: left; /* чтобы текст обтекал карт. справа */
+	margin-right: 30px;
+}
+#works-box div h3 {
+	color: #222222;
+	font-weight: normal; /* убираем полужирное начертание текста заголовка 3-го уровня */
+}
+#works-box div p {
+	font-size: 14px;
+	color: #999999;
+	padding-right: 30px;
+}
+#works-box div a {
+	float: right; /* выравниваем ссылку по правой стороне род-го блока */
+	margin-right: 25px;
+	text-decoration: none;
+	color: #333333;
+	font-size: 14px;
+}
+.footer {font-size: 20px; color: #000000;}
+	
+	* {margin:0; padding:0}
+
+
+#wrapper {float: left; width:800px; margin:1px auto}
+#container {position:relative; background:#fff; padding:32px; height:480px; border-right:1px solid #ccc; border-bottom:1px solid #ccc}
+.sliderbutton {float:left; width:25px; height:235px; cursor:pointer}
+#slideleft {background:url(images/icons.gif) -50px -170px no-repeat}
+#slideleft:hover {background-position:-0 -170px}
+#slideright {background:url(images/icons.gif) 0 180px no-repeat}
+#slideright:hover {background-position:-50px 180px}
+#slider {float:left; position:relative; overflow:auto; width:680px; height:480px}
+#slider ul {position:absolute; list-style:none; top:0; left:0}
+#slider li {float:left; width:800px; height:480px}
+.pagination {position:absolute; top:40px; right:61px; list-style:none; height:25px}
+.pagination li {float:left; cursor:pointer; height:8px; width:8px; background:#ccc; margin:0 4px 0 0; border:1px solid #fff}
+.pagination li:hover, li.current {background:#fff}
