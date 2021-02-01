@@ -3,43 +3,61 @@
 <head>
 	<meta charset="utf-8"/>
 	<title>Мыловаренная компания</title>
+	<meta http-equiv="KEYWORDS" content="мыло детское туалетное хозяйственное от производителя с доставкой">
+	<meta http-equiv="DESCRIPTION" content="продажа мыла и бытовой химии по всей России по низким ценам">
+	<script src="js/jquery-2.1.0.min.js"></script>
+    <script src="js/lightbox-2.6.min.js"></script>
+	<link href="css/lightbox.css" rel="stylesheet" />
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="style.css" />
 	<script type="text/javascript" src="script.js"></script>
 	
 	
 </head>
+
 <body>
+
 <div id="mainbox">
+
 <!--шапка сайта-->
     <header>
+	<div>
+				<video autoplay loop>
+ <source src="video/Underwater - 5385.mp4" type="video/mp4" />
+
+ </video>
+			</div>
+			
+<h3 id="2"></h3>
 	<!--верхнее меню-->
-	<div id="top-menu">
-	    <a href="images/logo.png">О компании</a>
-		<a href="images/specexcel.xls">Прайс скачать</a>
-		<a href="images/sotr.png">Сотрудничество</a>
-		<a href="images/proizv.jpg">Производство</a>
-		<a id="last" href="images/adress1.png">Контакты</a>
-		<a id="last1" href="images/shema.jpg">8(495)709-37-02</a>
+<div id="top-menu">
+	    <a href="index.html">О компании</a>
+		<a href="images/specexcelpdf.pdf" target="_blank">Продукция</a>
+		<a href="index2.html">Сотрудничество</a>
+		<a href="index4.html">Производство</a>
+		<a id="last" href="index5.html">Контакты</a>
+		<a id="last" href="index6.html">8(495)709-37-02</a>
 	</div>
 	 <!--/верхнее меню -->
 	 <!--/социальные иконки справа в шапке-->
 	
 	<div id="soc-icons">
-	     <a id="twitter" href="https://vk.com/id475188729"></a>
-		 <a id="facebook" href="https://vk.com/id475188729"></a>
+	     <a id="twitter" href="http://мылодетское.рф/"></a>
+		 <a id="facebook" href="https://www.facebook.com/%D0%9C%D1%8B%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D0%B5%D0%BD%D0%B8%D0%B5-315524341817309/"></a>
 		 <a id="google" href="https://vk.com/id475188729"></a>
 		 <a id="rss" href="http://www.мылохозяйственное.рф/"></a>
 	</div>
+	
 	</header>
 	<!--основное содержимое сайта с внутренними отступами -->
 	<div id="wrapperr">
 	     <!--логотип -->
-		 <a href="#"> <img src="design/logo.png"/></a>
+		  <a href="index.html"><img src="design/logo.png"/></a>
 		 
 		 <!--форма поиска -->
 		 <form id="search">
-		 <input type="text" value="" />
-		 <input type="submit" value="" />
+		 <input type="text" id="text-to-find" value="">
+		<input type="submit" onclick="javascript: FindOnPage('text-to-find'); return false;" value=""/>
 		 </form>
 		 
 		 <div id="banner">
@@ -57,6 +75,8 @@
 				<li><img src="slides/Slide 4.jpg" width="680" height="450" alt="Image Four" /></li>
 				<li><img src="slides/Slide 5.jpg" width="680" height="450" alt="Image Five" /></li>
 				<li><img src="slides/Slide 6.jpg" width="680" height="450" alt="Image Six" /></li>
+				<li><img src="slides/Slide 7.jpg" width="680" height="450" alt="Image Six" /></li>
+				<li><img src="slides/Slide 8.jpg" width="680" height="450" alt="Image Six" /></li>
 			</ul>
 		</div>
 		<div class="sliderbutton" id="slideright" onclick="slideshow.move(1)"></div>
@@ -67,13 +87,15 @@
 			<li onclick="slideshow.pos(3)"></li>
 			<li onclick="slideshow.pos(4)"></li>
 			<li onclick="slideshow.pos(5)"></li>
+			<li onclick="slideshow.pos(6)"></li>
+			<li onclick="slideshow.pos(7)"></li>
 					</ul>
 	</div>
 </div>
 <script type="text/javascript">
 var slideshow=new TINY.slider.slide('slideshow',{
 	id:'slider',
-	auto:6,
+	auto:8,
 	resume:false,
 	vertical:false,
 	navid:'pagination',
@@ -93,56 +115,236 @@ var slideshow=new TINY.slider.slide('slideshow',{
 			
 			    <h2>Новинки</h2>
 				<div> 
-				   <img src="images/work-1-110x110.jpg" />
+				   <img src="images/hozzl.jpg"/>
 				   <h3>Хозяйственное мыло</h3>
 				   <p>Крупное фото показать</p>
-				   <a href="images/hoz.jpg">details</a>
+				   <a href="index3.html">details</a>
 				</div>
 				<div>
-					<img src="images/work-2-110x110.jpg" />
-					<h3>Детское мыло в пленке</h3>
+					<img src="images/detvplenkel.jpg" />
+					<h3>Детское в пленке</h3>
 					<p>Крупное фото показать</p>
-					<a href="images/detvplenke.jpg">details</a>
+					<a href="index7.html">details</a>
 				</div>
-			  <a id="view-all" href="images/milo.png">view all</a>
+			  <a id="view-all" href="index9.html">view all</a>
 			
 			</div>
 		</div>
 		<!--блок анонсов статей works-->
 		<div id="works-box">
 			<div>
-				<img src="images/team-1-170x179.jpg"/>
+				<img src="images/team-2-170x179.jpg"/>
 				<h3>Ароматное мыло</h3>
 				<p>Крупное фото показать</p>
-				<a href="images/2mmm.jpg">works</a>
+				<a href="index8.html">works</a>
 			</div>
 			<div>
 				<img src="images/team-2-170x179.jpg"/>
 				<h3>Презентации</h3>
 				<p>Показать презентацию</p>
-				<a href="images/prez.pdf">works</a>
+				<a href="images/prez.pdf" target="_blank">works</a>
 			</div>
 			<div id="work-last">
 				<img src="images/team-3-170x179.jpg"/>
 				<h3>Детское мыло</h3>
 				<p>Крупное фото показать</p>
-				<a href="images/detskoe1.png">works</a>
+				<a href="index88.html">works</a>
+			</div>
+	</div>
+	<br/>
+	<br/>
+	<br/>
+	<div id="rworks-box">
+			<div>
+				<img src="images/lemonl.jpg"/>
+				<h3>Сочный лимон</h3>
+				<p>Крупное фото показать</p>
+				<a href="index8885.html">works</a>
+			</div>
+			<div>
+				<img src="images/cherryl.jpg"/>
+				<h3>Сладкая вишня</h3>
+				<p>Крупное фото показать</p>
+				<a href="index8884.html">works</a>
+			</div>
+			<div id="work-last">
+				<img src="images/peachl.jpg"/>
+				<h3>Спелый персик</h3>
+				<p>Крупное фото показать</p>
+				<a href="index8883.html">works</a>
+			</div>
+	</div>
+	<br/>
+	<br/>
+	<br/>
+	<div id="works-box">
+			<div>
+				<img src="images/alloeveral.jpg"/>
+				<h3>Алоэ-Вера</h3>
+				<p>Крупное фото показать</p>
+				<a href="index8882.html">works</a>
+			</div>
+			<div>
+				<img src="images/krvin1.jpg"/>
+				<h3>Роза и Красный виноград</h3>
+				<p>Крупное фото показать</p>
+				<a href="index888.html">works</a>
+			</div>
+			<div id="work-last">
+				<img src="images/kalendulal.jpg"/>
+				<h3>Календула и Лаванда</h3>
+				<p>Крупное фото показать</p>
+				<a href="index8881.html">works</a>
 			</div>
 	</div>
 	
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<div id="rekl">
+	<div>
+	
+	</div>
+	</div>
+	<br/>
+	<br/>
+	<div class="silde-coneiner">
+			<div class="slider">
+	<ul>
+		 <!-- <li><img src="i/Slide 1.jpg" alt=""></li>-->
+		<li><img src="i/Slide 2.jpg" alt=""></li>
+		<li><img src="i/Slide 3.jpg" alt=""></li>
+		<li><img src="i/Slide 4.jpg" alt=""></li>
+		<li><img src="i/Slide 5.jpg" alt=""></li>
+	</ul>
+			</div>
+			
 
-</div><!--/mainbox-->
+                <!--  <img src="images/slide1.jpg" alt="">-->
+            </div>   
+
+			
+	<br/>
 <div class="footer-main">
     	<div class="footer">
         	<div class="logo-ftr"><a href="/"><img src="images/logo3-ftr.png" alt="" /></a></div><br />
-            <div class="copyr">© Copyright 2018 ООО “Мыловаренная компания” <br />Адрес офиса: Газгольдерная улица, дом 10а<br />
+            <div class="copyr">© Copyright 2018 ООО “Мыловаренная компания” <br /> Газгольдерная улица, дом 10а Почта:Mkopt1@yandex.ru <br />Телефон:8(495)709-37-02 <br />
                 Все права защищены.<br />
                
+<button class="to-top" style="display: none;" onclick="up();">Go back</button>
             </div>
        		
         </div>
-    </div>
-
+		<script type="text/javascript">
+document.write("<a href='//www.liveinternet.ru/click' "+
+"target=_blank><img src='//counter.yadro.ru/hit?t23.6;r"+
+escape(document.referrer)+((typeof(screen)=="undefined")?"":
+";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+";h"+escape(document.title.substring(0,150))+";"+Math.random()+
+"' alt='' title='LiveInternet: number of visitors for today is"+
+" shown' "+
+"border='0' width='88' height='15'><\/a>")
+</script>
+	    </div>
+	
 </div>
+<a href="#2">
+</a>
+
+</div><!--/mainbox-->
+
+
+       
+<script type="text/javascript">
+$(document).ready(function() {
+ $(".slider").each(function () { // обрабатываем каждый слайдер
+  var obj = $(this);
+  $(obj).append("<div class='nav'></div>");
+  $(obj).find("li").each(function () {
+   $(obj).find(".nav").append("<span rel='"+$(this).index()+"'></span>"); // добавляем блок навигации
+   $(this).addClass("slider"+$(this).index());
+  });
+  $(obj).find("span").first().addClass("on"); // делаем активным первый элемент меню
+ });
+});
+function sliderJS (obj, sl) { // slider function
+ var ul = $(sl).find("ul"); // находим блок
+ var bl = $(sl).find("li.slider"+obj); // находим любой из элементов блока
+ var step = $(bl).width(); // ширина объекта
+ $(ul).animate({marginLeft: "-"+step*obj}, 500); // 500 это скорость перемотки
+}
+$(document).on("click", ".slider .nav span", function() { // slider click navigate
+ var sl = $(this).closest(".slider"); // находим, в каком блоке был клик
+ $(sl).find("span").removeClass("on"); // убираем активный элемент
+ $(this).addClass("on"); // делаем активным текущий
+ var obj = $(this).attr("rel"); // узнаем его номер
+ sliderJS(obj, sl); // слайдим
+ return false;
+});
+</script>
+
+<br>
+<style type="text/css">
+.to-top {
+   /*  position: fixed; фиксированная позиция */ 
+    bottom: 1%; /* отступ снизу */ 
+    z-index: 999; /* высокий стек */ 
+ }
+</style>
+
+
+<script type="text/javascript">
+function up() {
+    var e = Math.max(document.body.scrollTop, document.documentElement.scrollTop);
+    return e > 0 ? (window.scrollBy(0, (e + 30) / -30), t = setTimeout("up()", 20)) : clearTimeout(t), !1;
+}
+window.onscroll = function myScroll() {
+    var toTop = document.querySelector(".to-top");
+   (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) ? toTop.style.display='block' : toTop.removeAttribute('style');
+}
+</script>
+
+<!--код кнопки поиска-->
+
+<script type="text/javascript">
+var lastResFind=""; // последний удачный результат
+var copy_page=""; // копия страницы в ихсодном виде
+function TrimStr(s) {
+     s = s.replace( /^\s+/g, '');
+  return s.replace( /\s+$/g, '');
+}
+function FindOnPage(inputId) {//ищет текст на странице, в параметр передается ID поля для ввода
+  var obj = window.document.getElementById(inputId);
+  var textToFind;
+ 
+  if (obj) {
+    textToFind = TrimStr(obj.value);//обрезаем пробелы
+  } else {
+    alert("Введенная фраза не найдена");
+    return;
+  }
+  if (textToFind == "") {
+    alert("Вы ничего не ввели");
+    return;
+  }
+ 
+  if(document.body.innerHTML.indexOf(textToFind)=="-1")
+  alert("Ничего не найдено, проверьте правильность ввода!");
+ 
+  if(copy_page.length>0)
+        document.body.innerHTML=copy_page;
+  else copy_page=document.body.innerHTML;
+
+ 
+  document.body.innerHTML = document.body.innerHTML.replace(eval("/name="+lastResFind+"/gi")," ");//стираем предыдущие якори для скрола
+  document.body.innerHTML = document.body.innerHTML.replace(eval("/"+textToFind+"/gi"),"<a name="+textToFind+" style='background:red'>"+textToFind+"</a>"); //Заменяем найденный текст ссылками с якорем;
+  lastResFind=textToFind; // сохраняем фразу для поиска, чтобы в дальнейшем по ней стереть все ссылки
+  window.location = '#'+textToFind;//перемещаем скрол к последнему найденному совпадению
+ }
+</script>
+
+
 </body>
 </html>
