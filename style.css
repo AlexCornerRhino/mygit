@@ -5,6 +5,7 @@ body{
 	 padding: 0;
 	 background: #f2f2f2;
 }
+
 a img {
      border: 0;
 	 }
@@ -36,9 +37,16 @@ header {
     position: absolute;
 	top: 20px;
 	left: 40px;
+	
+}
+#top-menu a:hover{
+		color: red;
 }
 #top-menu #last {
 background: none;
+}
+#top-menu #last a:hover{
+		color: red;
 }
 
 #soc-icons a {
@@ -70,7 +78,9 @@ background: none;
 		right: 40px;
 }
 #wrapperr {
-   padding: 40px;
+	box-shadow: 0px 0px 5px 4px rgba(122,122,122,0.8);
+    padding: 40px;
+  
   }
 /* форма поиска, стилизуем элемент форм */
 #search {
@@ -79,7 +89,7 @@ background: none;
 	background: #ffffff;
 	float:right; /* выравниванием по правому краю */
 	margin-top: 30px;
-	box-shadow: 4px 4px 4px rgda(122,122,122,0.1);
+	box-shadow: 4px 4px 4px rgda(122,122,122,0.8);
 	border: 1px solid rgb(224,224,224);
 }
 #search input[type=text]{
@@ -104,9 +114,22 @@ background: none;
     margin-top: 30px;
 	height: 510px;
 	overflow: hidden;
-	box-shadow: 0px 0px 5px 4px rgba(122,122,122,0.1);
+	box-shadow: 0px 0px 5px 4px rgba(122,122,122,0.8);
 	}
 #sliderr{float: LEFT;}
+
+#bright:hover {
+	background: rgba(0,0,0,0);
+ 	color: red; }
+#bright h2:hover {
+	background: rgba(0,0,0,0);
+ 	color: red; }
+#bright h3:hover {
+	background: rgba(0,0,0,0);
+ 	color: red; }
+#bright a:hover {
+	background: rgba(0,0,0,0);
+ 	color: red; }
 #bright {
     background: #ffffff;
 	height:430px;	
@@ -119,7 +142,7 @@ background: none;
 	overflow: hidden; /* контент не будет выходить за границы данного эл-та с размерами 800x510 */
 	}
 #bright h2 {
-	color: #3c3c3c;
+	color: black;
 	font-size: 28px;
 	font-weight: normal;
 	margin: 0;
@@ -141,7 +164,7 @@ background: none;
 #bright div h3 {
     font-weight: normal;
 	font-size: 18px;
-	color: #333333;
+	color: black;
 	padding: 0;
 	margin: 0;
 	padding-top: 8px;
@@ -176,9 +199,19 @@ background: none;
 }
 
 /*Контейнер для блоков анонсов статей */
+#works-box :hover {
+ background: rgba(0,0,0,0);
+ color: red; 
+}
+#rworks-box :hover {
+ background: rgba(0,0,0,0);
+ color: red; 
+}
+
 #works-box {
 	margin-top: 40px;
 	height: 179px; /* высота обязательна для того чтобы след. за данным блоком не наезжали на него */
+	
 }
 /* стили блока анонсов статей */
 #works-box div {
@@ -186,7 +219,7 @@ background: none;
 	width: 380px;
 	float: left; /* чтобы блоки шли друг за другом */
 	margin-right: 20px;
-	box-shadow: 0px 0px 5px 4px rgba(122,122,122,0.1);
+	box-shadow: 0px 0px 5px 4px rgba(122,122,122,0.8);
 }
 #works-box #work-last {
 	margin-right:0;     	/* убираем внешний отступ справа для последнего блока, чтоб он помест.в линию с остальными */
@@ -232,7 +265,7 @@ background: none;
 	width: 380px;
 	float: left; /* чтобы блоки шли друг за другом */
 	margin-right: 20px;
-	box-shadow: 0px 0px 5px 4px rgba(122,122,122,0.1);
+	box-shadow: 0px 0px 5px 4px rgba(122,122,122,0.8);
 }
 #rworks-box #work-last {
 	margin-right:0;     	/* убираем внешний отступ справа для последнего блока, чтоб он помест.в линию с остальными */
@@ -283,7 +316,12 @@ background: none;
 	
 	* {margin:0; padding:0}
 
-
+#wrapper  :hover {
+	background: white;
+ 	color: red; }
+#container:hover {
+	background: white;
+ 	color: red; }
 #wrapper {float: left; width:800px; margin:0px auto}
 #container {position:relative; background:#fff; padding:32px; height:480px; border-right:1px solid #ccc; border-bottom:1px solid #ccc}
 .sliderbutton {float:left; width:25px; height:235px; cursor:pointer}
@@ -307,6 +345,7 @@ background: none;
  overflow: hidden;
  margin: 0 0 7px;
  position: relative;
+ box-shadow: 0px 0px 5px 4px rgba(122,122,122,0.8);
  }
  .slider ul,
  .slider li {

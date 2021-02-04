@@ -5,12 +5,13 @@
 	<title>Мыловаренная компания</title>
 	<meta http-equiv="KEYWORDS" content="мыло детское туалетное хозяйственное от производителя с доставкой">
 	<meta http-equiv="DESCRIPTION" content="продажа мыла и бытовой химии по всей России по низким ценам">
-	
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 
 	<link href="js/greybox/complete_greybox2.css" rel="stylesheet" type="text/css">
 	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 	<script type="text/javascript" src="js/greybox/jquery.greybox2.js"></script>
 	<link rel="stylesheet" type="text/css" href="style.css" />
+	
 	<script type="text/javascript" src="script.js"></script>
 	
 	
@@ -43,7 +44,7 @@
 	 <!--/социальные иконки справа в шапке-->
 	
 	<div id="soc-icons">
-	     <a id="twitter" href="http://мылодетское.рф/"></a>
+	     <a id="twitter" href="http://www.mk-milovar.ru/"></a>
 		 <a id="facebook" href="https://www.facebook.com/%D0%9C%D1%8B%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D0%B5%D0%BD%D0%B8%D0%B5-315524341817309/"></a>
 		 <a id="google" href="https://vk.com/id475188729"></a>
 		 <a id="rss" href="http://www.мылохозяйственное.рф/"></a>
@@ -112,27 +113,27 @@ var slideshow=new TINY.slider.slide('slideshow',{
 
        
 			<!--правый блок-->
-			<div id="bright">
+			<div  id="bright">
 			
-			    <h2>Новинки</h2>
+			    <h2 id="red">Новинки</h2>
 				<div class="inpage"> 
 				   <img src="images/hozzl.jpg"/>
 				   <h3>Хозяйственное мыло</h3>
 				   <p>Крупное фото показать</p>
-				   <a href="images/hoz.jpg">Крупнее</a>
+				   <a href="images/hoz.jpg"width="700" height="700">Крупнее</a>
 				</div>
 				<div class="inpage">
 					<img src="images/detvplenkel.jpg" />
 					<h3>Детское в пленке</h3>
 					<p>Крупное фото показать</p>
-					<a href="images/detvplenke.jpg">Крупнее</a>
+					<a href="images/detvplenke.jpg" width="700" height="700">Крупнее</a>
 				</div>
 			  <a id="view-all" href="index9.html">view all</a>
 			
 			</div>
 		</div>
 		<!--блок анонсов статей works-->
-		<div id="works-box">
+		<div  id="works-box">
 			<div class="inpage">
 				<img  src="images/team-2-170x179.jpg"/>
 				<h3>Ароматное мыло</h3>
@@ -348,11 +349,45 @@ function FindOnPage(inputId) {//ищет текст на странице, в п
 <script type="text/javascript">
 $(document).ready(function() {
   var gbOptions = {
-    gbWidth: 800,
-    gbHeight: 360
+    gbWidth: 1200,
+    gbHeight: 550
   };
 	$('.inpage a').greybox(gbOptions);
 });
+</script>
+<script type="text/javascript">
+$(document).ready(function() {
+  var target = '.bigLink';
+  var hoverClass = 'hoverBigLink';
+
+  $(target).each(function() {
+		$(this).hover(
+      function() {
+         $(this).addClass(hoverClass);
+         status=$(this).find('a').attr('href');
+      },
+      function () {
+         $(this).removeClass(hoverClass);
+      });
+
+    $(this).click(function() {
+       location = $(this).find('a').attr('href');
+    });
+
+    $(this).css('cursor','pointer');
+
+  });
+
+
+  $(target + ' a')
+    .focus(function() {
+      $(this).parents(target).addClass(hoverClass);
+    })
+    .blur(function() {
+			$(this).parents(target).removeClass(hoverClass);
+   });
+
+}); // end ready()
 </script>
 
 </body>
