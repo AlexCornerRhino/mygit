@@ -297,24 +297,24 @@ background: none;
 	font-size: 14px;
 }
 
-
+.footer {font-size: 16px; color: #ffffff;margin-left: 10px;margin:2px; padding:3px;}
+	
+	
 
 	 video{
    position:fixed;
-   top: 1px;
-   left: 2px;
+   top: 0px;
+   left: 0px;
    z-index:-1;
    min-width:100%;
    min-height:100%;
    overflow:hidden;
-}*/
+}
  
  
 
 
-.footer {font-size: 20px; color: #000000;margin-left: 400px;}
-	
-	* {margin:0; padding:0}
+
 
 #wrapper  :hover {
 	background: white;
