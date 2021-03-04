@@ -19,7 +19,14 @@ header {
 	background: url(design/box-tail.gif) left top repeat;
 	height: 69px;
 	position: relative;
+	box-shadow: 0px 0px 5px 4px rgba(122,122,122,0.8);
 }
+#search{box-shadow: 0px 0px 5px 4px rgba(122,122,122,0.8);
+}
+#wrapperr1 {
+	box-shadow: 0px 0px 5px 4px rgba(122,122,122,0.8);
+    
+  }
 
 #top-menu a {
     display: block;
@@ -37,8 +44,9 @@ header {
     position: absolute;
 	top: 20px;
 	left: 40px;
-	
+		
 }
+
 #top-menu a:hover{
 		color: red;
 }
