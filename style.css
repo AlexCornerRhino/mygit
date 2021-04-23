@@ -48,6 +48,7 @@ header {
 }
 
 #top-menu a:hover{
+		cursor: pointer;	
 		color: red;
 		transition: 1s all;
 	    transform:scale(1.2,1.2);
